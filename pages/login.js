@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { withSession } from "../middlewares/session";
 import Link from "next/link";
 
-const login = ({ user }) => {
+const Login = ({ user }) => {
   const router = useRouter();
 
   const {
@@ -48,10 +48,10 @@ const login = ({ user }) => {
 
             <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
                 <p className="text-center text-3xl">Welcome.</p>
-                <form className="flex flex-col pt-3 md:pt-8" onClick="event.preventDefault();" onSubmit={handleSubmit(onSubmit)}>
+                <form className="flex flex-col pt-3 md:pt-8" onSubmit={handleSubmit(onSubmit)}>
                     <div className="flex flex-col pt-4">
-                        <label htmlFor="email" className="text-lg">Username</label>
-                        <input type="email" id="email" placeholder="Your username" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
+                        <label htmlFor="username" className="text-lg">Username</label>
+                        <input type="username" id="user-name" placeholder="Your username" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
                         {...register("username", { required: true })}
                         />
                     </div>
@@ -63,9 +63,14 @@ const login = ({ user }) => {
                             required: true,
                           })}
                           />
+                          {errors.password?.type === "required" && (
+                         <span className="text-red-300">Password is required</span>
+                     )}
                     </div>
-    
+                          
+                    
                     <input type="submit" value="Log In" className="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8"/>
+                    
                 </form>
                 <div className="text-center pt-12 pb-12">
                     <p>Don&apos;t have an account? 

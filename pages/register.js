@@ -51,7 +51,7 @@ const Register = ({ user }) => {
 
          <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
              <p className="text-center text-3xl">Welcome.</p>
-             <form className="flex flex-col pt-3 md:pt-8" onClick="event.preventDefault();"
+             <form className="flex flex-col pt-3 md:pt-8"
              onSubmit={handleSubmit(onSubmit)}
              >
              <div className="flex flex-col pt-4">

@@ -1,6 +1,6 @@
 // import { useSelector, useDispatch } from "react-redux";
 // import { useEffect } from "react";
-// import ShopLayout from "../components/layout/layout";
+import ShopLayout from "../components/layout/layout";
 
 
 import Link from "next/link";
@@ -25,26 +25,7 @@ const Home = ({ user }) => {
 
   return (
     <div>
-      <h1>Home</h1>
-      {user ? (
-        <p>
-          Hello {user.user_nicename}, have a nice day ! Maybe you want to{" "}
-          <a href="/api/logout" onClick={onLogout}>
-            logout ?
-          </a>
-        </p>
-      ) : (
-        <p>
-          Hello guest, maybe you want to{" "}
-          <Link href="/login">
-            <a>login ?</a>
-          </Link>
-        </p>
-      )}
-
-      <Link href="/login">
-        <a>Login</a>
-      </Link>
+     <ShopLayout></ShopLayout>
     </div>
   );
 };

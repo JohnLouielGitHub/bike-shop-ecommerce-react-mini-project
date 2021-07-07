@@ -2,6 +2,8 @@ module.exports = {
   reactStrictMode: true,
   env: {
     wpURL: "http://bikemeup-ml.stackstaging.com",
-    token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9iaWtlbWV1cC1tbC5zdGFja3N0YWdpbmcuY29tIiwiaWF0IjoxNjI1NjQxNTk5LCJuYmYiOjE2MjU2NDE1OTksImV4cCI6MTYyNjI0NjM5OSwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.d247xlHfsWj0QvD5VDZcuq8gyGlTATPw7UlNWslf6co"
+    consumerKey: "ck_9e9255de4ef777db51e06c895951f3a92f23aff1",
+    consumerSecret: "cs_48fcaadda9fbf73e6ceb4889b0bba557f6144847",
+    sessionSecret: "5b4c2e77f76123b404f8529a5d9c6c66"
   },
 };
