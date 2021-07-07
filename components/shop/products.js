@@ -4,7 +4,7 @@ import ProductItem from "../components/ProductItem";
 import Image from "next/image";
 
 
-const Products2 = () => {
+const Products = () => {
     return (
         <>
         <Navbar/>
@@ -86,4 +86,4 @@ const Products2 = () => {
 };
 
 
-export default Products2;
+export default Products;
