@@ -3,6 +3,10 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { withSession } from "../middlewares/session";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/logo.svg";
+
+let dummyImage = "https://source.unsplash.com/IXUM4cJynP0";
 
 const Login = ({ user }) => {
   const router = useRouter();
@@ -37,13 +41,14 @@ const Login = ({ user }) => {
 
      <body className="bg-white font-family-karla h-screen">
 
-        <div className="w-full flex flex-wrap">
-
+        <div className="w-full flex flex-wrap h-screen bg-gray-500">
+        <Image className="object-right" src={dummyImage}         
+          layout="fill" objectFit="cover"/>
         
-        <div className="w-full md:w-1/2 flex flex-col">
+        <div className="z-0 w-full md:w-1/2 flex flex-col bg-white">
 
             <div className="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
-                <a href="#" className="bg-black text-white font-bold text-xl p-4">Logo</a>
+            <Image src={logo} width={240} height={80}/>
             </div>
 
             <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
@@ -69,7 +74,9 @@ const Login = ({ user }) => {
                     </div>
                           
                     
-                    <input type="submit" value="Log In" className="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8"/>
+                    <button type="submit" className="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8">
+                    Log In
+                      </button>
                     
                 </form>
                 <div className="text-center pt-12 pb-12">
@@ -82,9 +89,6 @@ const Login = ({ user }) => {
         </div>
 
        
-        <div className="w-1/2 shadow-2xl">
-            {/* <Image className="object-cover w-full h-screen hidden md:block" src="https://source.unsplash.com/IXUM4cJynP0"/> */}
-        </div>
     </div>
 
     </body>

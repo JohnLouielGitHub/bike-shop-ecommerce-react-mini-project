@@ -1,5 +1,5 @@
-// import { useSelector, useDispatch } from "react-redux";
-// import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import ShopLayout from "../components/layout/layout";
 
 
@@ -25,7 +25,7 @@ const Home = ({ user }) => {
 
   return (
     <div>
-     <ShopLayout></ShopLayout>
+     <ShopLayout/>
     </div>
   );
 };

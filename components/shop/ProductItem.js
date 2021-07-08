@@ -2,8 +2,8 @@ const ProductItem = () => {
     return (
         <>
 
-<div className="flex flex-wrap -m-4">
-    <div className="flex flex-col items-center justify-center max-w-sm mx-auto">
+
+    <div className="flex flex-col items-center justify-center max-w-sm mx-auto mb-5">
         <div className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"></div>
 
         <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
@@ -38,7 +38,7 @@ const ProductItem = () => {
             </div>
         </div>
     </div>
-    </div>
+
     </>
 )
 }
