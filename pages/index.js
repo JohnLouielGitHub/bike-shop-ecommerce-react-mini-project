@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import ShopLayout from "../components/layout/layout";
 
-
 import Link from "next/link";
 import { withSession } from "../middlewares/session";
 import { useRouter } from "next/router";

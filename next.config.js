@@ -7,6 +7,6 @@ module.exports = {
     sessionSecret: "5b4c2e77f76123b404f8529a5d9c6c66"
   },
   images: {
-    domains: ['dummyimage.com','i.pinimg.com','source.unsplash.com'],
+    domains: ['dummyimage.com','i.pinimg.com','source.unsplash.com','images.unsplash.com','images.pexels.com'],
   },
 };

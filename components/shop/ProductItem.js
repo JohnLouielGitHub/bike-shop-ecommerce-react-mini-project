@@ -1,3 +1,5 @@
+import CartItem from "../CartItem";
+
 const ProductItem = () => {
     return (
         <>

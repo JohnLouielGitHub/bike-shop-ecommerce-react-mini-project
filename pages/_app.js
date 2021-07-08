@@ -1,4 +1,5 @@
-import 'tailwindcss/tailwind.css'
+import 'tailwindcss/tailwind.css';
+import '../styles/carousel.css';
 import { wrapper } from "../store";
 
 function MyApp({ Component, pageProps }) {
