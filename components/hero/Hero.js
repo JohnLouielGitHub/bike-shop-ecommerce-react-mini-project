@@ -1,5 +1,4 @@
-
-import ImageHero from "next/Image";
+import Image from "../../node_modules/next/image";
 import Picture from "../../public/hero-1.png";
 import Picture2 from "../../public/hero-2.png";
 import Picture3 from "../../public/hero-3.png";
