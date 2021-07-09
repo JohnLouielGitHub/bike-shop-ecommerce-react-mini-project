@@ -1,12 +1,10 @@
 
-import Image from "next/Image";
+import ImageHero from "next/Image";
 import Picture from "../../public/hero-1.png";
 import Picture2 from "../../public/hero-2.png";
 import Picture3 from "../../public/hero-3.png";
 
 const Hero = () => {
-
-let carouselImage = Picture;
 
     return (
         <>
@@ -16,7 +14,7 @@ let carouselImage = Picture;
 		<input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="true" defaultChecked="true"/>
 		<div className="carousel-item absolute opacity-0" style={{height:"50vh"}}>
 			<div className="block h-full w-full bg-orange-500 text-white text-5xl text-center">
-                <Image alt="CarouselImage" src={Picture3}  layout="fill" objectFit="cover"/>
+                <ImageHero alt="CarouselImage1" src={Picture3}  layout="fill" objectFit="cover"/>
                 <div className="absolute bottom-16 left-36 md:inset-40">
                 <div className="text-xl md:text-3xl bg-red-500 md:px-3 md:w-1/2 lg:w-1/4">Be Fit with You Bike</div>
                 </div>
@@ -30,7 +28,7 @@ let carouselImage = Picture;
 		<input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="true"/>
 		<div className="carousel-item absolute opacity-0" style={{height:"50vh"}}>
 			<div className="block h-full w-full bg-orange-500 text-white text-5xl text-center">
-                <Image alt="CarouselImage" src={Picture2}  layout="fill" objectFit="cover"/>
+                <ImageHero alt="CarouselImage2" src={Picture2}  layout="fill" objectFit="cover"/>
                 <div className="absolute bottom-16 left-36 md:inset-40 flex-wrap">
                 <div className="text-xl md:text-3xl bg-red-500 md:px-3 md:w-1/2 lg:w-1/4">Bike Build / Repair</div>
                 </div>
@@ -43,7 +41,7 @@ let carouselImage = Picture;
 		<input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="true"/>
 		<div className="carousel-item absolute opacity-0" style={{height:"50vh"}}>
 			<div className="block h-full w-full bg-green-500 text-white text-5xl text-center">
-                <Image alt="CarouselImage" src={Picture}  layout="fill" objectFit="cover"/>
+                <ImageHero alt="CarouselImage3" src={Picture}  layout="fill" objectFit="cover"/>
                 <div className="absolute bottom-36 left-36 md:inset-40 flex-wrap">
                 <div className="text-xl md:text-3xl bg-red-500 md:px-3 md:w-1/2 lg:w-1/4">Poise With Your Bike</div>
                 </div>
