@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { withSession } from "../middlewares/session";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "../node_modules/next/image";
 import logo from "../public/logo.svg";
 
 let dummyImage = "https://source.unsplash.com/IXUM4cJynP0";
