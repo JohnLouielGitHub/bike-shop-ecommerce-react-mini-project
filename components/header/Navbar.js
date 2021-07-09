@@ -17,7 +17,7 @@ const Navbar = () => {
   <div className="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
 
     <a className="flex title-font font-medium items-cente mb-4 md:mb-0">
-      <Image src={logo} width={80} height={80}/>
+      <Image alt="Logo" src={logo} width={80} height={80}/>
     </a>
     <div className="ps-8 inline w-6/12">
   <div className="bg-white flex items-center rounded-full w-auto shadow-xl h-12">
@@ -25,7 +25,7 @@ const Navbar = () => {
     
     <div className="p-4">
       <button className=" text-gray  hover:text-gray-900 focus:outline-none w-12 h-12 flex items-center justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
       </button>
@@ -35,8 +35,8 @@ const Navbar = () => {
 
 <div className="md:hidden inline-block">
 <button href="#"  onClick={() => setBurgerOpen(!burgerOpen)}>
-<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
 </svg>
 </button>
 </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
         </a>
       </button>
 
-    <Link href="../../login">
+    <Link href="../../login" passHref>
     <button className="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign-in
       <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>

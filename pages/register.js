@@ -49,7 +49,7 @@ const Register = ({ user }) => {
      <div className="z-0 w-full md:w-1/2 flex flex-col bg-white">
 
          <div className="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
-         <Image src={logo} width={240} height={80}/>
+         <Image alt="Logo" src={logo} width={240} height={80}/>
          </div>
 
          <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">

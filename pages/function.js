@@ -1,4 +1,7 @@
-<div className={`product ${renderStyleClass()}`}>
+const Function = () => {
+  return (
+      <div>
+{/* <div className={`product ${renderStyleClass()}`}>
         <div className="product-image">
           <Link
             href={process.env.PUBLIC_URL + `/product/[slug]`}
@@ -160,4 +163,10 @@
             </div>
           ) : null}
         </div>
+      </div> */}
       </div>
+  )
+};
+
+export default Function;    
+
