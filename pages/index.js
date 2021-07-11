@@ -30,13 +30,16 @@ const Home = ({ user }) => {
 };
 
 export const getServerSideProps = withSession((context) => {
+  
   const { req } = context;
+
   return {
     props: {
       user: req.session.get("user") || null,
     },
   };
 });
+
 
 export default Home;
 

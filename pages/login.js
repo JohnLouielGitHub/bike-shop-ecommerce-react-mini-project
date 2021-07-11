@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "../node_modules/next/image";
 import logo from "../public/logo.svg";
 
-let dummyImage = "https://source.unsplash.com/IXUM4cJynP0";
+let dummyImage = "https://www.sefiles.net/merchant/1718/images/site/Trek_Emonda_ALR_15-slimC.jpg";
 
 const Login = ({ user }) => {
   const router = useRouter();

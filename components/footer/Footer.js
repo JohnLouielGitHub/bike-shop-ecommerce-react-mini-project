@@ -1,6 +1,6 @@
 import Categories from "./elements/Categories"
 import Image from "next/image";
-import logo from "../../public/logo.svg";
+import logo from "../../public/logo-vertical.svg";
 
 const Footer = () => {
     return (
@@ -9,7 +9,7 @@ const Footer = () => {
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-    <Image alt="Logo" src={logo} width={240} height={80}/>
+    <Image alt="Logo" src={logo} width={240} height={128}/>
       </div>
       <Categories/>
 
@@ -69,7 +69,7 @@ const Footer = () => {
       <p className="text-gray-500 text-sm text-center sm:text-left">© 2021 B-1-kodego —
         <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@JLT @Angelo @JhonRey</a>
       </p>
-      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
+      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Ecommerce website, educational purpose only.</span>
     </div>
   </div>
 </footer>

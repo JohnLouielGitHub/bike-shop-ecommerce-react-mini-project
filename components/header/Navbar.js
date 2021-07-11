@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/logo.svg";
+import logo from "../../public/logo-horizontal.svg";
 import Link from "next/link";
 import {useState} from "react";
 import CartItem from "../CartItem";
@@ -13,24 +13,18 @@ const Navbar = () => {
 
     return (
         <>
-<header className="text-gray-600 body-font bg-gray-400">
-  <div className="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
-
-    <a className="flex title-font font-medium items-cente mb-4 md:mb-0">
-      <Image alt="Logo" src={logo} width={80} height={80}/>
-    </a>
-    <div className="ps-8 inline w-6/12">
-  <div className="bg-white flex items-center rounded-full w-auto shadow-xl h-12">
-    <input className="rounded-l-full w-full py-1 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search"/>
-    
-    <div className="p-4">
-      <button className=" text-gray  hover:text-gray-900 focus:outline-none w-12 h-12 flex items-center justify-center">
+<header className="z-50 text-gray-600 body-font fixed w-screen bg-gray-500 py-3 px-3">
+  <div className="container mx-auto flex flex-wrap flex-row items-center justify-around lg:justify-between">
+    <Image alt="Logo" src={logo} width={128} height={64}/>
+  <div className="inline w-1/2 md:w-1/2 lg:w-1/4">
+  <div className="flex items-center border-b-2 border-black">
+    <input className="w-full px-3 bg-transparent focus:outline-none" id="search" type="text" placeholder="What can we help you?"/>
+      <button className="border-2 border-b-0 border-black bg-black text-white hover:text-gray-500 focus:outline-none flex items-center justify-center">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
       </button>
-      </div>
-    </div>
+  </div>
   </div>
 
 <div className="md:hidden inline-block">
@@ -40,45 +34,56 @@ const Navbar = () => {
 </svg>
 </button>
 </div>
+
+<div className="flex flex-wrap flex-row items-center justify-end lg:justify-between">
+
 <nav className="hidden md:block  flex flex-wrap items-center text-base justify-center">
   <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-  <button><li><a className="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Shop</a></li></button>
+ <Link href="/">
+  <button>
+  <li>
+  <a className="inline-block no-underline hover:text-black hover:underline py-2 px-4" >Shop</a>
+  </li>
+  </button>
+  </Link>
+  <button><li><a className="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Stories</a></li></button>
   <button><li><a className="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Categories</a></li></button>
+  <Link href="/about">
   <button><li><a className="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">About Us</a></li></button>
+  </Link>
   <button><li><a className="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Contact Us</a></li></button>
   </ul>
 </nav>
 
-  <div className="hidden md:block  order-2 md:order-3 flex" id="nav-content">
-      <button>
-      <a className="inline-block no-underline hover:text-black px-3 md:inline-flex items-center " href="#" onClick={() => signInOpen(!signIn)}>
+
+<div className="hidden md:inline flex flex-wrap flex-row  items-center justify-center">
+      <button className="no-underline hover:text-black px-3 items-center " href="#" onClick={() => signInOpen(!signIn)}>
             <svg className="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <circle fill="none" cx="12" cy="7" r="3" />
                 <path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" />
             </svg>
-        </a>
       </button>
 
-      <button>
-      <a className="pl-3 inline-block no-underline hover:text-black px-3 md:inline-flex items-center " href="#" onClick={() => setCartOpen(!cartOpen)}>
+      <button className="hidden md:inline no-underline hover:text-black px-3 items-center " href="#" onClick={() => setCartOpen(!cartOpen)}>
             <svg className="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" />
                 <circle cx="10.5" cy="18.5" r="1.5" />
                 <circle cx="17.5" cy="18.5" r="1.5" />
             </svg>
-        </a>
-      </button>
-
-    <Link href="../../login" passHref>
-    <button className="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign-in
+        </button>
+</div>
+<Link href="../../login" passHref>
+    <button className="hidden md:flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded">Sign-in
       <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
     </button>
     </Link>
-  </div>
-
 </div>
+
+
+
+  </div>
 
 <div
         className={`${

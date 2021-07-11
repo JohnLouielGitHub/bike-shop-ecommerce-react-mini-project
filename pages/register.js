@@ -7,7 +7,8 @@ import Image from "next/image";
 import logo from "../public/logo.svg";
 
 
-let dummyImage = "https://source.unsplash.com/IXUM4cJynP0";
+let dummyImage = "https://www.sefiles.net/merchant/1718/images/site/Trek_Emonda_ALR_15-slimC.jpg";
+
 const Register = ({ user }) => {
   const router = useRouter();
 
@@ -44,8 +45,9 @@ const Register = ({ user }) => {
 
   <body className="bg-white font-family-karla h-screen">
 
-     <div className="w-full flex flex-wrap">
-     
+     <div className="w-full flex flex-wrap h-screen">
+          <Image alt="backgroundImage" className="object-right" src={dummyImage}         
+          layout="fill" objectFit="cover"/>
      <div className="z-0 w-full md:w-1/2 flex flex-col bg-white">
 
          <div className="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
