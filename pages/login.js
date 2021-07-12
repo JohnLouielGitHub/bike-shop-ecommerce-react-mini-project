@@ -42,9 +42,8 @@ const Login = ({ user }) => {
      <body className="bg-white font-family-karla h-screen">
 
         <div className="w-full flex flex-wrap h-screen bg-gray-500">
-        <Image alt="backgroundImage" className="object-right" src={dummyImage}         
+          <Image alt="backgroundImage" className="object-right" src={dummyImage}         
           layout="fill" objectFit="cover"/>
-        
         <div className="z-0 w-full md:w-1/2 flex flex-col bg-white">
 
             <div className="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
@@ -81,7 +80,7 @@ const Login = ({ user }) => {
                 </form>
                 <div className="text-center pt-12 pb-12">
                     <p>Don&apos;t have an account? 
-                    <Link href="/register" className="underline font-semibold">Register here.</Link></p>
+                    <Link href="/register" className="underline font-semibold">&nbsp;&nbsp;Register here.</Link></p>
                     
                 </div>
             </div>

@@ -179,9 +179,9 @@ const Navbar = () => {
             cartOpen ? "translate-x-0 ease-out" : "translate-x-full ease-in"
           } z-20 fixed right-0 top-0 max-w-xs w-full h-full transition duration-300 transform overflow-y-auto bg-white`}
         >
-          <div className="px-6 py-4 bg-gray-500">
+          <div className="px-6 py-4 bg-black">
             <div className=" flex items-center justify-between">
-              <h3 className="text-2xl font-medium text-gray-700">Your cart</h3>
+              <h3 className="text-2xl font-medium text-white">Your cart</h3>
               <button
                 onClick={() => setCartOpen(!cartOpen)}
                 className="text-gray-600 focus:outline-none"
@@ -222,12 +222,12 @@ const Navbar = () => {
                   type="text"
                   placeholder="Add promocode"
                 />
-                <button className="ml-3 flex items-center px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                <button className="ml-3 flex items-center px-3 py-2 bg-gray-800 text-white text-sm uppercase font-medium rounded hover:bg-gray-500 focus:outline-none focus:bg-gray-500">
                   <span>Apply</span>
                 </button>
               </form>
             </div>
-            <a className="flex items-center justify-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+            <a className="flex items-center justify-center mt-4 px-3 py-2 bg-gray-800 text-white text-sm uppercase font-medium rounded hover:bg-gray-500 focus:outline-none focus:bg-gray-500">
               <span>Checkout</span>
               <svg
                 className="h-5 w-5 mx-2"
@@ -249,9 +249,9 @@ const Navbar = () => {
             signIn ? "translate-x-0 ease-out" : "translate-x-full ease-in"
           } z-20 fixed right-0 top-0 max-w-xs w-full h-full transition duration-300 transform overflow-y-auto bg-white `}
         >
-          <div className="px-6 py-4 bg-gray-500">
+          <div className="px-6 py-4 bg-black">
             <div className=" flex items-center justify-between">
-              <h3 className="text-2xl font-medium text-gray-700">Hello User</h3>
+              <h3 className="text-2xl font-medium text-white">Hello User</h3>
               <button
                 onClick={() => signInOpen(!signIn)}
                 className="text-white focus:outline-none"
@@ -317,9 +317,9 @@ const Navbar = () => {
             burgerOpen ? "translate-x-0 ease-out" : "translate-x-full ease-in"
           } z-20 fixed right-0 top-0 max-w-xs  md:hidden w-full h-full transition duration-300 transform overflow-y-auto bg-white`}
         >
-          <div className="px-6 py-4 bg-gray-500">
+          <div className="px-6 py-4 bg-black">
             <div className=" flex items-center justify-between">
-              <h3 className="text-2xl font-medium text-gray-700">
+              <h3 className="text-2xl font-medium text-white">
                 Hamburger Menu
               </h3>
               <button

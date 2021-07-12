@@ -46,8 +46,11 @@ const Register = ({ user }) => {
   <body className="bg-white font-family-karla h-screen">
 
      <div className="w-full flex flex-wrap h-screen">
-          <Image alt="backgroundImage" className="object-right" src={dummyImage}         
+   
+         <Image alt="backgroundImage" className="object-right" src={dummyImage}         
           layout="fill" objectFit="cover"/>
+       
+
      <div className="z-0 w-full md:w-1/2 flex flex-col bg-white">
 
          <div className="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
@@ -83,7 +86,12 @@ const Register = ({ user }) => {
                  <button type="submit" className="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8">
                     Register
                       </button>
-             </form>
+                    <div className="text-center pt-12 pb-12">
+                    <p>Have an account? 
+                    <Link href="/login" className="underline font-semibold">&nbsp;&nbsp;Login here.</Link></p>
+             
+                    </div>
+                </form>
             
          </div>
 

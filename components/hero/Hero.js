@@ -17,7 +17,7 @@ const Hero = () => {
 			<div className="block h-full w-full bg-orange-500 text-white text-5xl text-center">
                 <ImageHero alt="CarouselImage1" src={Picture3}  layout="fill" objectFit="cover"/>
                 <div className="absolute left-16 md:left-36 bottom-36 flex-wrap">
-                <div className="px-6 py-2 rounded-lg text-sm md:text-6xl bg-red-500">"BE FIT WITH  YOUR BIKE"</div>
+                <div className="px-6 py-2 rounded-xl text-sm md:text-6xl bg-gray-500">"BE FIT WITH  YOUR BIKE"</div>
                 </div>
                 </div>
                 
@@ -31,7 +31,7 @@ const Hero = () => {
 			<div className="block h-full w-full bg-orange-500 text-white text-5xl text-center">
                 <ImageHero alt="CarouselImage2" src={Picture2}  layout="fill" objectFit="cover"/>
                 <div className="absolute left-16 md:left-36 bottom-36 flex-wrap">
-                <div className="px-6 py-2 rounded-lg text-sm md:text-6xl bg-red-500">"REPAIR/BUILD/CUSTOMIZE YOUR BIKE"</div>
+                <div className="px-6 py-2 rounded-xl text-sm md:text-6xl bg-gray-500">"REPAIR/BUILD/CUSTOMIZE YOUR BIKE"</div>
                 </div>
                 </div>
 		</div>
@@ -44,7 +44,7 @@ const Hero = () => {
 			<div className="block h-full w-full bg-green-500 text-white text-5xl text-center">
                 <ImageHero alt="CarouselImage3" src={Picture}  layout="fill" objectFit="cover"/>
                 <div className="absolute left-16 md:left-36 bottom-36 flex-wrap">
-                <div className="px-6 py-2 rounded-lg text-sm md:text-6xl bg-red-500">"POISE WITH YOUR BIKE"</div>
+                <div className="px-6 py-2 rounded-xl text-sm md:text-6xl bg-gray-500">"POISE WITH YOUR BIKE"</div>
                 </div>
                 </div>
 		</div>

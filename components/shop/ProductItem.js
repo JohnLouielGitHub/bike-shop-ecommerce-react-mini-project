@@ -32,9 +32,10 @@ const ProductItem = ({ data, product, addToCart, removeFromCart }) => {
     });
 
     return !isVisible ? null : (
-      <div className="modal cursor-auto">
-        <div className="modal-dialog  " onClick={(e) => e.stopPropagation()}>
-          <button className="w-full relative text-center h-64 bg-gray-300 bg-center bg-cover shadow-md object-center  border-2 border-gray-900 border-solid border-opacity-10">
+      <div className="modal cursor-auto bg-white">
+        <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
+      <div className="">
+      <button className="w-full relative text-center h-64 bg-gray-300 bg-center bg-cover shadow-md object-center  border-2 border-gray-900 border-solid border-opacity-10">
             <Image
               alt="CarouselImage1"
               src={data.productImage}
@@ -106,7 +107,12 @@ const ProductItem = ({ data, product, addToCart, removeFromCart }) => {
               </div>
             </div>
           </div>
-        </div>
+        
+      </div>
+      <div className="text-left bg-white px-3 py-3">
+       {data.productDescription}
+      </div>
+      </div>
       </div>
     );
   };

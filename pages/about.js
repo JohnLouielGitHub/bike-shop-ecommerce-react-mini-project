@@ -13,9 +13,7 @@ function About() {
               OUR TEAM
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them.
+            Our team consists of people with different backgrounds, nationalities and personalities. This combination makes it a strong team who will always collaborate to find ways to bundle each other’s strengths to the benefit of the customer. What they all have in common is that they are all passionate about the legal and economic profession.
             </p>
           </div>
           <div className="flex flex-wrap-m-4">

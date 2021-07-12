@@ -1,12 +1,58 @@
 import Footer from "../footer/Footer";
 import ProductItem from "./ProductItem";
 import productsData from "../../data/products.json";
+import { useState, useEffect, useCallback } from "react";
 
-const Products = (count) => {
+const productsFilter = [
+  {
+    name: 'James',
+    price: 31,
+  },
+  {
+    name: 'John',
+    price: 45,
+  },
+  {
+    name: 'Paul',
+    price: 65,
+  },
+  {
+    name: 'Ringo',
+    price: 49,
+  },
+  {
+    name: 'George',
+    price: 34,
+  }
+];
+
+const names = ['James', 'John', 'Paul', 'Ringo', 'George', 'Pewdiepie'];
+
+const Products = (count, data) => {
   let products = productsData;
-  const pages = Math.ceil(count / 8);
+  const pages = Math.ceil(count / 10);
+  // const [prods, setProds] = useState(data);
+  const [prods, setProds] = useState(productsFilter);
+
+  
+  const highToLow = () => productsFilter.filter(prod => prod.productPrice < 70).map(filteredProducts => (
+    <li>
+      {filteredProducts.productPrice}
+    </li>
+  ));
+  
+  const lowToHigh = () =>  productsFilter.filter(prod => prod.productPrice < 100).map(filteredProducts => (
+    <ProductItem data={x} key={x.id}>
+      {filteredProducts.productPrice}
+    </ProductItem>
+  ));
   return (
     <>
+
+  <div>
+
+    </div>
+
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className=" m-4 flex items-center justify-end">
@@ -19,17 +65,19 @@ const Products = (count) => {
               className="px-4 ml-2 rounded-full outline-none border-2 border-solid"
               placeholder="Categories"
             >
-              <option>Default</option>
-              <option>Price Lowest to Highest</option>
-              <option>Price Highest to Lowest</option>
+              <option value="DEFAULT">Default</option>
+              <option value="lowToHigh">Price Lowest to Highest</option>
+              <option value="highToLow">Price Highest to Lowest</option>
               <option>A to Z</option>
               <option>Z to A</option>
             </select>
           </div>
 
+
+
           <div className="flex flex-wrap m-4 justify-between">
             {products.map((x) => {
-              return <ProductItem data={x} key={x.id} />;
+            return <ProductItem data={x} key={x.id} />;
             })}
           </div>
         </div>
