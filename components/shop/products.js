@@ -35,17 +35,17 @@ const Products = (count, data) => {
   const [prods, setProds] = useState(productsFilter);
 
   
-  const highToLow = () => productsFilter.filter(prod => prod.productPrice < 70).map(filteredProducts => (
-    <li>
-      {filteredProducts.productPrice}
-    </li>
-  ));
+  // const highToLow = () => productsFilter.filter(prod => prod.productPrice < 70).map(filteredProducts => (
+  //   <li>
+  //     {filteredProducts.productPrice}
+  //   </li>
+  // ));
   
-  const lowToHigh = () =>  productsFilter.filter(prod => prod.productPrice < 100).map(filteredProducts => (
-    <ProductItem data={x} key={x.id}>
-      {filteredProducts.productPrice}
-    </ProductItem>
-  ));
+  // const lowToHigh = () =>  productsFilter.filter(prod => prod.productPrice < 100).map(filteredProducts => (
+  //   <ProductItem data={x} key={x.id}>
+  //     {filteredProducts.productPrice}
+  //   </ProductItem>
+  // ));
   return (
     <>
 

@@ -5,11 +5,8 @@ import mtb from '../../public/banner/bike-2.png';
 import road from '../../public/banner/road.png';
 
 const Banner = () => {
-    
     return (
         <>
-
-
         <div className="container px-5 py-3 mx-auto flex flex-wrap m-4 flex justify-center" >
         <div className="w-full flex justify-center">
         <h2 className="text-3xl px-3 py-3 text-bold">Bike Categories</h2>
@@ -51,7 +48,6 @@ const Banner = () => {
         </div>
       </div>
       </div>
-
 </>
 )
 }
