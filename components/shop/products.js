@@ -33,19 +33,6 @@ const Products = (count, data) => {
   const pages = Math.ceil(count / 10);
   // const [prods, setProds] = useState(data);
   const [prods, setProds] = useState(productsFilter);
-
-  
-  // const highToLow = () => productsFilter.filter(prod => prod.productPrice < 70).map(filteredProducts => (
-  //   <li>
-  //     {filteredProducts.productPrice}
-  //   </li>
-  // ));
-  
-  // const lowToHigh = () =>  productsFilter.filter(prod => prod.productPrice < 100).map(filteredProducts => (
-  //   <ProductItem data={x} key={x.id}>
-  //     {filteredProducts.productPrice}
-  //   </ProductItem>
-  // ));
   return (
     <>
 
