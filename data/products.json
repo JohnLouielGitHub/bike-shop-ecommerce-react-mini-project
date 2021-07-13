@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/23.jpg",
+    "productName": "Specialized Shiv Sport Road Bike",
+    "productDescription": "The Shiv Sport was designed with one goal in mind—making you faster over the bike leg of your race.",
+    "productPrice": "2758.75"
+  },
+  {
+    "id": 2,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/22.jpg",
+    "productName": "GT Aggressor Sport 27.5 2021 MTB Bike",
+    "productDescription": "Off-road friendly and light-weight, it’s perfect for everyday recreational use. X Guides keep cables tucked away and tidy",
+    "productPrice": "517.31"
+  },
+  {
+    "id": 3,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/21.jpg",
+    "productName": "GT Zaskar LT Expert 29 2021 MTB Bike",
+    "productDescription": "The King of Hardtails is conquering another domain. With a new frame and more attitude, the all-new Zaskar LT is made for riders who put their value in the simple stoke of a great ride, without any fuss.",
+    "productPrice": "1754.41"
+  },
+  {
+    "id": 4,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/18.jpg",
+    "productName": "Mbm Vintage 700C Bike Woman",
+    "productDescription": "If you are looking for Mbm Vintage 700C Bike Woman, you are lucky. In our bike store, you have the best price available and with the confidence that the store gives you like bikeinn.",
+    "productPrice": "489.43"
+  },
+  {
+    "id": 5,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/19.jpg",
+    "productName": "Mbm Mini Simil Folding Bike",
+    "productDescription": "If you are interested in Mbm Mini Simil Folding Bike, discover also other bike products related to Mbm in the Bikes and frames department and City bikes catalogue.",
+    "productPrice": "285.59"
+  },
+  {
+    "id": 6,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/18.jpg",
+    "productName": "Mbm Angela Folding Bike",
+    "productDescription": "Mbm Angela Folding Bike is available with different characteristics. Buy it at bikeinn and benefit from all the advantages.",
+    "productPrice": "288.69"
+  },
+  {
+    "id": 7,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/17.jpg",
+    "productName": "Mbm People 700C Bike Woman",
+    "productDescription": "Are you interested in Mbm People 700C Bike Woman? At this moment the product is in stock at bikeinn, your online bike store.",
+    "productPrice": "415.96"
+  },
+  {
+    "id": 8,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/16.jpg",
+    "productName": "Mbm Angela Folding Bike",
+    "productDescription": "Mbm Angela Folding Bike is available with different characteristics. Buy it at bikeinn and benefit from all the advantages.",
+    "productPrice": "288.69"
+  },
+  {
+    "id": 9,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/15.jpg",
+    "productName": "SE Bikes Floval Flyer 24 2021 BMX Bike",
+    "productDescription": "Year in and year out, the Floval Flyer is one of the fastest 24” cruisers on the track. This year’s bike is built with a lightweight 6066 aluminum frame featuring a super-stiff bi-oval downtube, internally machined integrated head tube and 3D-forged dropouts.",
+    "productPrice": "731.41"
+  },
+  {
+    "id": 10,
+    "productImage": "http://bikemeup-ml.stackstaging.com/wp-content/uploads/2021/07/14.jpg",
+    "productName": "SE Bikes PK Ripper Super Elite XL 20 2021 BMX Bike",
+    "productDescription": "The PK Ripper has never been stiffer, stronger or faster. The PK Ripper Super Elite XL is the definition of “BMX innovations.” The ultra-stiff 6066 aluminum frame comes equipped with features such as a tapered head tube, PF30 bottom bracket and 20mm dropouts front and rear. There is no doubt that this bike will put you on top of the podium.",
+    "productPrice": "811.72"
+  }
+]
