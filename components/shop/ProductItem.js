@@ -2,11 +2,11 @@ import { isUndefined } from "lodash";
 import Image from "next/dist/client/image";
 
 const ProductItem = ( {bike} ) => {
-	console.log(`${bike.images[0]}`);
+	// console.log(`${bike.images[0]}`);
 	// console.log(`${bike.images[0].src}`);
 	return (
 		<>
-		  <div className="flex flex-col items-center justify-center  max-w-sm mb-5">
+		  <div className="flex flex-col items-center justify-center  py-18 max-w-sm mb-5">
 			<div className="w-56 overflow-hidden bg-white shadow-lg md:w-64 dark:bg-gray-800">
 			  <button
 				className="w-full h-64 text-center relative bg-center bg-cover shadow-md hover:cursor-pointer"
