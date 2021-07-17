@@ -5,11 +5,11 @@ import { useState, useEffect, useCallback } from "react";
 
 
 
-const Products = ({products}) => {
+const Products = ({ products }) => {
   // let products = productsData;
-  // const pages = Math.ceil(count / 10);
+  // const pages = Math.ceil(co   unt / 10);
   const [prods, setProds] = useState(products);
-  
+
   const selectSortHandler = (selected) => {
     if (selected.toLowerCase() === "lowtohigh")
       setProds([...prods].sort((a, b) => Number(a.price) - Number(b.price)));
@@ -24,12 +24,12 @@ const Products = ({products}) => {
       setProds([...prods].sort((a, b) => String(b.name) - String(a.name)));
   };
 
-    return (
+  return (
     <>
 
-  <div>
+      <div>
 
-    </div>
+      </div>
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -57,8 +57,8 @@ const Products = ({products}) => {
 
 
           <div className="flex flex-wrap m-4 sm:justify-between justify-center">
-          {prods.map((bike) => (
-            <ProductItem bike={bike} key={bike.id}/>
+            {prods.map((bike) => (
+              <ProductItem bike={bike} key={bike.id} />
             ))}
           </div>
         </div>
