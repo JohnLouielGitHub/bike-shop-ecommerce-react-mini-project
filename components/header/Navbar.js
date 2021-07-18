@@ -13,18 +13,18 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="z-50 text-gray-600 body-font fixed w-screen bg-gray-500 py-3 px-3">
+      <header className="z-50 text-gray-600 body-font font-bold fixed w-screen bg-black py-3 px-3">
         <div className="container mx-auto flex flex-wrap flex-row items-center justify-around lg:justify-between">
           <Image alt="Logo" src={logo} width={128} height={64} />
           <div className="inline w-1/2 md:w-1/2 lg:w-1/4">
-            <div className="flex items-center border-b-2 border-black">
+            <div className="flex items-center border-b-2 border-white">
               <input
                 className="w-full px-3 bg-transparent focus:outline-none"
                 id="search"
                 type="text"
                 placeholder="What can we help you?"
               />
-              <button className="border-2 border-b-0 border-black bg-black text-white hover:text-gray-500 focus:outline-none flex items-center justify-center">
+              <button className="border-2 border-b-0 border-white bg-black text-white hover:text-gray-500 focus:outline-none flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link href="/" passHref>
                   <button>
                     <li>
-                      <a className="inline-block no-underline hover:text-black hover:underline py-2 px-4">
+                      <a className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4">
                         Shop
                       </a>
                     </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <button>
                   <li>
                     <a
-                      className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                      className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                       href="#"
                     >
                       Stories
@@ -87,7 +87,7 @@ const Navbar = () => {
                 <button>
                   <li>
                     <a
-                      className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                      className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                       href="#"
                     >
                       Categories
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <button>
                     <li>
                       <a
-                        className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                        className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                         href="#"
                       >
                         About Us
@@ -109,7 +109,7 @@ const Navbar = () => {
                 <button>
                   <li>
                     <a
-                      className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                      className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                       href="#"
                     >
                       Contact Us
@@ -121,12 +121,12 @@ const Navbar = () => {
 
             <div className="hidden md:inline flex flex-wrap flex-row  items-center justify-center">
               <button
-                className="no-underline hover:text-black px-3 items-center "
+                className="no-underline hover:text-gray-600 px-3 items-center "
                 href="#"
                 onClick={() => signInOpen(!signIn)}
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -138,12 +138,12 @@ const Navbar = () => {
               </button>
 
               <button
-                className="hidden md:inline no-underline hover:text-black px-3 items-center "
+                className="hidden md:inline no-underline hover:text-gray-600 px-3 items-center "
                 href="#"
                 onClick={() => setCartOpen(!cartOpen)}
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -344,12 +344,12 @@ const Navbar = () => {
           <div className="md:hidden justify-end flex">
             <button>
               <a
-                className="inline-block no-underline hover:text-black px-3 md:inline-flex items-center "
+                className="inline-block no-underline hover:text-gray-600 px-3 md:inline-flex items-center "
                 href="#"
                 onClick={() => signInOpen(!signIn) + setBurgerOpen(!burgerOpen)}
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -362,14 +362,14 @@ const Navbar = () => {
             </button>
             <button>
               <a
-                className="pl-3 inline-block no-underline hover:text-black px-3 md:inline-flex items-center "
+                className="pl-3 inline-block no-underline hover:text-gray-600 px-3 md:inline-flex items-center "
                 href="#"
                 onClick={() =>
                   setCartOpen(!cartOpen) + setBurgerOpen(!burgerOpen)
                 }
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

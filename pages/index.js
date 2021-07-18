@@ -36,9 +36,13 @@ const Home = ({ user, products }) => {
 
 export async function getServerSideProps() {
   // Fetch data from external API
+  // const oauth = new URLSearchParams({
+  //   consumer_key: "ck_621f6edb753dd60434f31e41b01b9a64d07c3b4e",
+  //   consumer_secret: "cs_11b38d065996231066311034ff46e7db2e257272",
+  // });
   const oauth = new URLSearchParams({
-    consumer_key: "ck_621f6edb753dd60434f31e41b01b9a64d07c3b4e",
-    consumer_secret: "cs_11b38d065996231066311034ff46e7db2e257272",
+    consumer_key: "ck_a76f0747db4a99a5954943118358191f4ad9fda4",
+    consumer_secret: "cs_21efa55eb4c78d7426c4078b7474b4170b527855",
   });
   const res = await fetch(
     `https://bikemeup-ml.stackstaging.com/wp-json/wc/v3/products/?${oauth.toString()}`

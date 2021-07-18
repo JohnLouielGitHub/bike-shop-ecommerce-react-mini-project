@@ -12,14 +12,14 @@ const ProductItem = ( {bike} ) => {
 				className="w-full h-64 text-center relative bg-center bg-cover shadow-md hover:cursor-pointer"
 				onClick={() => setModal(true)}>
 					{bike.images ? (
-								<img 
+								<Image 
 								id="product-image"
 								className="transition duration-500 ease-in-out transform cursor-pointer hover:grow hover:shadow-lg hover:scale-105"
 								src={`${bike.images[0].src}`}
 								alt="Product Image"
 								width={300} height={300}/>
 							) : (
-								<img
+								<Image
 								id="product-image"
 								className="transition duration-500 ease-in-out transform cursor-pointer hover:grow hover:shadow-lg hover:scale-105"
 								src="https://www.sefiles.net/merchant/1718/images/site/Trek_Emonda_ALR_15-slimC.jpg" alt="Product Image" width={300} height={300}/>

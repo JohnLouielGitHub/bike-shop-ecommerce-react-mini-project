@@ -9,7 +9,7 @@ const Products = ({ products }) => {
   // let products = productsData;
   // const pages = Math.ceil(co   unt / 10);
   const [prods, setProds] = useState(products);
-
+  // console.log(products)
   const selectSortHandler = (selected) => {
     if (selected.toLowerCase() === "lowtohigh")
       setProds([...prods].sort((a, b) => Number(a.price) - Number(b.price)));

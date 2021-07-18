@@ -5,7 +5,7 @@ import logo from "../../public/logo-vertical.svg";
 const Footer = () => {
     return (
         <>
-<footer className="text-gray-600 body-font  bg-gray-400 mt-3">
+<footer className="text-gray-600 body-font font-bold  bg-black mt-3">
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
