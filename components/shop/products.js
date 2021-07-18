@@ -1,71 +1,76 @@
 import Footer from "../footer/Footer";
 import ProductItem from "./ProductItem";
-import productsData from "../../data/products.json";
+// import productsData from "../../data/products.json";
 import { useState, useEffect, useCallback } from "react";
 
-const productsFilter = [
-  {
-    name: 'James',
-    price: 31,
-  },
-  {
-    name: 'John',
-    price: 45,
-  },
-  {
-    name: 'Paul',
-    price: 65,
-  },
-  {
-    name: 'Ringo',
-    price: 49,
-  },
-  {
-    name: 'George',
-    price: 34,
-  }
-];
 
-const names = ['James', 'John', 'Paul', 'Ringo', 'George', 'Pewdiepie'];
 
-const Products = (count, data) => {
-  let products = productsData;
-  const pages = Math.ceil(count / 10);
-  // const [prods, setProds] = useState(data);
-  const [prods, setProds] = useState(productsFilter);
+const Products = ({ products }) => {
+  // let products = productsData;
+  // const pages = Math.ceil(co   unt / 10);
+  const [prods, setProds] = useState(products);
+  const selectSortHandler = (selected) => {
+    if (selected.toLowerCase() === "lowtohigh")
+    {
+      console.log("LowtoHigh")
+      setProds([...prods].sort((a, b) => Number(a.price) - Number(b.price)));
+    }
+
+    if (selected.toLowerCase() === "hightolow"){
+      console.log("HightoLow")
+      setProds([...prods].sort((a, b) => Number(b.price) - Number(a.price)));
+    }
+
+    if (selected.toLowerCase() === "a-z")
+    {
+      console.log("A-Z")
+      setProds([...prods].sort((c, d) => String(c.name) - String(d.name)));
+    }
+    if (selected.toLowerCase() === "z-a")
+    {
+      console.log("Z-A")
+      setProds([...prods].sort((c, d) => String(d.name) - String(c.name)));
+    }
+
+  };
+
+  
+
   return (
     <>
 
-  <div>
+      <div>
 
-    </div>
+      </div>
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className=" m-4 flex items-center justify-end">
             <h3 className="w-1/3 text-xl">
-              Showing 1 - {products.length} of 20 Products
+              Showing 1 - {prods.length} of 20 Products
             </h3>
 
             <h4 className="text-xl">Filter by:</h4>
             <select
               className="px-4 ml-2 rounded-full outline-none border-2 border-solid"
               placeholder="Categories"
+              onChange={(e) => selectSortHandler(e.target.value)}
+              defaultValue="DEFAULT"
             >
               <option value="DEFAULT">Default</option>
               <option value="lowToHigh">Price Lowest to Highest</option>
               <option value="highToLow">Price Highest to Lowest</option>
-              <option>A to Z</option>
-              <option>Z to A</option>
+              <option value="a-z">A to Z</option>
+              <option value="z-a">Z to A</option>
             </select>
           </div>
 
 
 
-          <div className="flex flex-wrap m-4 justify-between">
-            {products.map((x) => {
-            return <ProductItem data={x} key={x.id} />;
-            })}
+          <div className="flex flex-wrap m-4 sm:justify-between justify-center">
+            {prods.map((x) => (
+              <ProductItem bike={x} key={x.id} />
+            ))}
           </div>
         </div>
         {/* <div className="flex justify-center">

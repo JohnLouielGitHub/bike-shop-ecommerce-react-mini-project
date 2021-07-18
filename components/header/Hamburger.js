@@ -18,7 +18,6 @@ const Hamburger = () => {
             <button>
             <a className="text-gray-600 hover:text-gray-800">Shop</a>
             </button>
-            
           </li>
           <li className="mb-3">
             <button>

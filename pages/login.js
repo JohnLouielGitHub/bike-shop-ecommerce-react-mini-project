@@ -39,7 +39,7 @@ const Login = ({ user }) => {
     return (
         <>
 
-     <body className="bg-white font-family-karla h-screen">
+     <div className="bg-white font-family-karla h-screen">
 
         <div className="w-full flex flex-wrap h-screen bg-gray-500">
           <Image alt="backgroundImage" className="object-right" src={dummyImage}         
@@ -80,7 +80,7 @@ const Login = ({ user }) => {
                 </form>
                 <div className="text-center pt-12 pb-12">
                     <p>Don&apos;t have an account? 
-                    <Link href="/register" className="underline font-semibold">&nbsp;&nbsp;Register here.</Link></p>
+                    <Link href="/register" className="underline font-semibold">&nbsp;&nbsp;Register here.</Link></p> 
                     
                 </div>
             </div>
@@ -90,7 +90,7 @@ const Login = ({ user }) => {
        
     </div>
 
-    </body>
+    </div>
 </>
 )
 };

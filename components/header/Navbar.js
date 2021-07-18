@@ -13,18 +13,18 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="z-50 text-gray-600 body-font fixed w-screen bg-gray-500 py-3 px-3">
+      <header className="z-50 text-gray-600 body-font font-bold fixed w-screen bg-black py-3 px-3">
         <div className="container mx-auto flex flex-wrap flex-row items-center justify-around lg:justify-between">
           <Image alt="Logo" src={logo} width={128} height={64} />
           <div className="inline w-1/2 md:w-1/2 lg:w-1/4">
-            <div className="flex items-center border-b-2 border-black">
+            <div className="flex items-center border-b-2 border-white">
               <input
                 className="w-full px-3 bg-transparent focus:outline-none"
                 id="search"
                 type="text"
                 placeholder="What can we help you?"
               />
-              <button className="border-2 border-b-0 border-black bg-black text-white hover:text-gray-500 focus:outline-none flex items-center justify-center">
+              <button className="border-2 border-b-0 border-white bg-black text-white hover:text-gray-500 focus:outline-none flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="md:hidden inline-block">
+          <div className="md:hidden inline-block text-white">
             <button href="#" onClick={() => setBurgerOpen(!burgerOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,13 +62,13 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="flex flex-wrap flex-row items-center justify-end lg:justify-between">
-            <nav className="hidden md:block  flex flex-wrap items-center text-base justify-center">
-              <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+          <div className="flex flex-wrap flex-row items-center justify-end text-white lg:justify-between">
+            <nav className="hidden md:block  flex flex-wrap items-center justify-center">
+              <ul className="md:flex items-center justify-between pt-4 md:pt-0">
                 <Link href="/" passHref>
                   <button>
                     <li>
-                      <a className="inline-block no-underline hover:text-black hover:underline py-2 px-4">
+                      <a className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4">
                         Shop
                       </a>
                     </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <button>
                   <li>
                     <a
-                      className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                      className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                       href="#"
                     >
                       Stories
@@ -87,7 +87,7 @@ const Navbar = () => {
                 <button>
                   <li>
                     <a
-                      className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                      className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                       href="#"
                     >
                       Categories
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <button>
                     <li>
                       <a
-                        className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                        className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                         href="#"
                       >
                         About Us
@@ -109,7 +109,7 @@ const Navbar = () => {
                 <button>
                   <li>
                     <a
-                      className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                      className="font-bold inline-block no-underline hover:text-gray-600 hover:underline py-2 px-4"
                       href="#"
                     >
                       Contact Us
@@ -121,12 +121,12 @@ const Navbar = () => {
 
             <div className="hidden md:inline flex flex-wrap flex-row  items-center justify-center">
               <button
-                className="no-underline hover:text-black px-3 items-center "
+                className="no-underline hover:text-gray-600 px-3 items-center "
                 href="#"
                 onClick={() => signInOpen(!signIn)}
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -138,12 +138,12 @@ const Navbar = () => {
               </button>
 
               <button
-                className="hidden md:inline no-underline hover:text-black px-3 items-center "
+                className="hidden md:inline no-underline hover:text-gray-600 px-3 items-center "
                 href="#"
                 onClick={() => setCartOpen(!cartOpen)}
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -155,8 +155,8 @@ const Navbar = () => {
                 </svg>
               </button>
             </div>
-            <Link href="../../login" passHref>
-              <button className="hidden md:flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded">
+            <Link href="/login" passHref>
+              <button className="hidden md:flex items-center text-black bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded">
                 Sign-in
                 <svg
                   fill="none"
@@ -177,9 +177,9 @@ const Navbar = () => {
         <div
           className={`${
             cartOpen ? "translate-x-0 ease-out" : "translate-x-full ease-in"
-          } z-20 fixed right-0 top-0 max-w-xs w-full h-full transition duration-300 transform overflow-y-auto bg-white`}
+          } z-20 fixed right-0 top-0 max-w-xs w-full h-full transition duration-300 transform overflow-y-auto bg-white  border-l-2 border-black`}
         >
-          <div className="px-6 py-4 bg-black">
+          <div className="px-6 py-4 bg-black border-4 border-black">
             <div className=" flex items-center justify-between">
               <h3 className="text-2xl font-medium text-white">Your cart</h3>
               <button
@@ -187,7 +187,7 @@ const Navbar = () => {
                 className="text-gray-600 focus:outline-none"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-5 w-5 text-white"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -247,7 +247,7 @@ const Navbar = () => {
         <div
           className={`${
             signIn ? "translate-x-0 ease-out" : "translate-x-full ease-in"
-          } z-20 fixed right-0 top-0 max-w-xs w-full h-full transition duration-300 transform overflow-y-auto bg-white `}
+          } z-20 fixed right-0 top-0 max-w-xs w-full h-full transition duration-300 transform overflow-y-auto bg-white border-l-2 border-black `}
         >
           <div className="px-6 py-4 bg-black">
             <div className=" flex items-center justify-between">
@@ -315,7 +315,7 @@ const Navbar = () => {
         <div
           className={`${
             burgerOpen ? "translate-x-0 ease-out" : "translate-x-full ease-in"
-          } z-20 fixed right-0 top-0 max-w-xs  md:hidden w-full h-full transition duration-300 transform overflow-y-auto bg-white`}
+          } z-20 fixed right-0 top-0 max-w-xs  md:hidden w-full h-full transition duration-300 transform overflow-y-auto bg-white border-l-2 border-black`}
         >
           <div className="px-6 py-4 bg-black">
             <div className=" flex items-center justify-between">
@@ -344,12 +344,12 @@ const Navbar = () => {
           <div className="md:hidden justify-end flex">
             <button>
               <a
-                className="inline-block no-underline hover:text-black px-3 md:inline-flex items-center "
+                className="inline-block no-underline hover:text-gray-600 px-3 md:inline-flex items-center "
                 href="#"
                 onClick={() => signInOpen(!signIn) + setBurgerOpen(!burgerOpen)}
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -362,14 +362,14 @@ const Navbar = () => {
             </button>
             <button>
               <a
-                className="pl-3 inline-block no-underline hover:text-black px-3 md:inline-flex items-center "
+                className="pl-3 inline-block no-underline hover:text-gray-600 px-3 md:inline-flex items-center "
                 href="#"
                 onClick={() =>
                   setCartOpen(!cartOpen) + setBurgerOpen(!burgerOpen)
                 }
               >
                 <svg
-                  className="fill-current hover:text-black"
+                  className="fill-current hover:text-gray-600"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

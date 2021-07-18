@@ -5,13 +5,13 @@ import Banner from "../banner/Banner";
 import Hero from "../hero/Hero";
 
 
-const ShopLayout = () => {
+const ShopLayout = ({products}) => {
     return (
         <div>
         <Navbar/>
         <Hero/>
         <Banner/>
-        <Products/>
+        <Products products={products}/>
         <Footer/>
         </div>
     )
